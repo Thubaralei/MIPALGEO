@@ -1,0 +1,20 @@
+!pip install graphviz==0.9
+!pip install pydot
+!pip install seaborn==0.9.0
+!conda install scikit-image
+
+import pandas as pd 
+import numpy as np 
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm 
+import seaborn as sns 
+import statsmodels.api as sm 
+import statsmodels.formula.api as smf
+from skimage.io import imread
+import matplotlib.pyplot as plt
+from skimage.util import montage as montage2d
+
+dados = pd.read_csv('dados.csv', sep=';')
+dados.shape
+
+dados.head()
